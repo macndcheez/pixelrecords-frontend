@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 
-//destructure the post from props
+
 const Post = ({ entry }) => {
-  //////////////////
-  // Style Objects
-  //////////////////
+
   const div = {
     textAlign: "center",
     border: "5px solid white",

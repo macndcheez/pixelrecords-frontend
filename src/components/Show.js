@@ -4,9 +4,6 @@ import { Link, useLoaderData, Form } from "react-router-dom";
 const Show = () => {
   const entry = useLoaderData();
 
-  ////////////////////
-  // Styles
-  ///////////////////
   const div = {
     textAlign: "center",
     width: "80%",

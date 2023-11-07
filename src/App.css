@@ -9,6 +9,11 @@ body {
 h1 {
   text-align: center;
 }
+
+button {
+  padding: 40px;
+  font-family: 'Press Start 2P';
+}
 .link-without-underline{
   text-decoration: none;
 }
