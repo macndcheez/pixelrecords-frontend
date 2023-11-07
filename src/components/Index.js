@@ -3,18 +3,20 @@ import {useLoaderData} from "react-router-dom"
 import { Form } from "react-router-dom";
 
 const Index = (props) => {
-  const todos = useLoaderData()
+  const entry = useLoaderData()
   // For each post in the array render a Post component
   return <>
   <div style={{textAlign: "center"}}>
-  <h2>Create a Todo</h2>
+  <h2>Create an Entry</h2>
   <Form action="/create" method="post">
-      <input type="text" name="subject" placeholder="write subject here"/>
-      <input type="text" name="details" placeholder="write details here"/>
-      <button>Create New Todo</button>
+      <input type="text" name="game_title" placeholder="write game title here"/>
+      <input type="date" name="date" placeholder="choose date"/>
+      <input type="text" name="entry_subject" placeholder="write entry subject here"/>
+      <input type="text" name="entry" placeholder="write entry here"/>
+      <button>Create New Entry</button>
   </Form>
   </div>
-  {todos.map((post) => <Post post={post} key={post.id} />)}
+  {entry.map((post) => <Post entry={post} key={post.id} />)}
   </>;
 };
 
