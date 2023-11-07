@@ -14,9 +14,10 @@ const Post = ({ entry }) => {
   return (
     <div style={div}>
       <Link to={`/entries/${entry.id}`}>
-        <h1>{entry.entry_subject}</h1>
+        <h1>{entry.game_title}</h1>
       </Link>
-      <h2>{entry.entry}</h2>
+      <h2>{entry.entry_subject}</h2>
+      <h3>{entry.entry}</h3>
     </div>
   );
 };
